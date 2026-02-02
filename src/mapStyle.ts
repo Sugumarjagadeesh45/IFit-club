@@ -3,7 +3,7 @@
 // Use a stable style string (memoized) to prevent re-renders
 const LIGHT_STYLE = JSON.stringify({
   version: 8,
-  name: 'EazyGo Light',
+  name: 'IFIT Club Light',
   sources: {
     'carto-light': {
       type: 'raster',

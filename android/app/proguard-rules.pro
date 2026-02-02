@@ -42,10 +42,10 @@
 -dontwarn okio.**
 
 # Keep our native location service classes
--keep class com.webase.eazygodriver.BackgroundLocationService { *; }
--keep class com.webase.eazygodriver.BootCompleteReceiver { *; }
--keep class com.webase.eazygodriver.LocationServiceModule { *; }
--keep class com.webase.eazygodriver.LocationServicePackage { *; }
+-keep class com.webase.ifitclub.BackgroundLocationService { *; }
+-keep class com.webase.ifitclub.BootCompleteReceiver { *; }
+-keep class com.webase.ifitclub.LocationServiceModule { *; }
+-keep class com.webase.ifitclub.LocationServicePackage { *; }
 
 # Keep Google Play Services Location
 -keep class com.google.android.gms.location.** { *; }

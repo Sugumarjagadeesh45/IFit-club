@@ -1,9 +1,11 @@
 {
-  "name": "eazygodriver",
+  "name": "ifitclub",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "android:clean": "rm -rf android/.gradle android/app/build android/build",
+    "android:fix-key": "keytool -genkey -v -keystore android/app/debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname \"CN=Android Debug,O=Android,C=US\"",
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",

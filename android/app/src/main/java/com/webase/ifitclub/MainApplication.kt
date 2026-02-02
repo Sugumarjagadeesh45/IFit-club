@@ -1,7 +1,6 @@
-package com.webase.eazygodriver
+package com.webase.ifitclub
 
 import android.app.Application
-import android.util.Log
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactHost
@@ -17,8 +16,7 @@ class MainApplication : Application(), ReactApplication {
     object : DefaultReactNativeHost(this) {
       override fun getPackages(): List<ReactPackage> =
         PackageList(this).packages.apply {
-          // ✅ Add our custom LocationServicePackage
-          add(LocationServicePackage())
+          // Packages added here
         }
 
       override fun getUseDeveloperSupport(): Boolean = BuildConfig.DEBUG
@@ -35,12 +33,5 @@ class MainApplication : Application(), ReactApplication {
   override fun onCreate() {
     super.onCreate()
     loadReactNative(this)
-
-    // ✅ Check if driver was online before app restart/reboot
-    // This helps restore driver state automatically
-    if (BackgroundLocationService.wasDriverOnline(this)) {
-      Log.d("MainApplication", "📱 Driver was online before app restart")
-      // Service will be started when React Native initializes
-    }
   }
 }
