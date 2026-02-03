@@ -1,13 +1,3 @@
-/**
- * FitnessMapScreen - Main Map Screen for Fitness App
- * Features:
- * - Map view with live location tracking
- * - Smooth animations as user moves
- * - 1-second location updates
- * - Socket emission to backend every second
- * - Works in background, when screen is locked, or other apps are open
- */
-
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import {
   View,
